@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth="match_parent"
+                app:srcCompat="@drawable/image_placeholder"
+                tools:layout_conversion_absoluteHeight="732dp"
+                tools:layout_conversion_absoluteWidth="393dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:ellipsize="middle"
+            android:maxLines="1"
+            android:paddingVertical="10dp"
+            android:text="SomeLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongString"
+            tools:layout_conversion_absoluteHeight="97dp"
+            tools:layout_conversion_absoluteWidth="393dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="732dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,10 @@
+<resources>
+    <style name="AnimatedDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/Animation.Window</item>
+    </style>
+
+    <style name="Animation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/fade_up</item>
+        <item name="android:windowExitAnimation">@anim/fade_down</item>
+    </style>
+</resources>
